@@ -63,3 +63,7 @@ fun TataletakBox(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun TataletakColumnRow(modifier: Modifier = Modifier) {
+    Column {
+        // Baris 1
