@@ -96,6 +96,17 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(top = 4.dp, bottom = 32.dp)
             )
 
+            // Card untuk Informasi Profil (Tampil seperti kotak ID Card modern)
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .shadow(16.dp, RoundedCornerShape(24.dp)),
+                shape = RoundedCornerShape(24.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.White.copy(alpha = 0.95f)
+                )
+            ) {
+
             }
         }
     }
