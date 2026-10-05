@@ -37,6 +37,47 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxSize()
         )
 
+        // Overlay Gradient Gelap agar konten di depannya lebih menonjol dan terbaca
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.verticalGradient(
+                        colors = listOf(
+                            Color.Black.copy(alpha = 0.2f),
+                            Color.Black.copy(alpha = 0.8f)
+                        )
+                    )
+                )
+        )
+
+        // 2. Konten Utama
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 24.dp, vertical = 48.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            // Logo Kampus (UMY) dengan Background Putih Bulat dan Bayangan
+            Box(
+                modifier = Modifier
+                    .size(110.dp)
+                    .shadow(12.dp, CircleShape)
+                    .clip(CircleShape)
+                    .background(Color.White),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.logo_umy),
+                    contentDescription = "Logo Kampus",
+                    modifier = Modifier
+                        .size(90.dp)
+                        .padding(8.dp),
+                    contentScale = ContentScale.Fit
+                )
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
 
 
             }
