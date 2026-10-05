@@ -79,6 +79,15 @@ fun LoginScreen(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(24.dp))
 
+            // Judul User
+            Text(
+                text = "User",
+                fontSize = 36.sp,
+                fontWeight = FontWeight.ExtraBold,
+                color = Color.White,
+                letterSpacing = 1.5.sp
+            )
+
 
             }
         }
