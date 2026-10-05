@@ -88,6 +88,13 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 letterSpacing = 1.5.sp
             )
 
+            // Subjudul
+            Text(
+                text = "Ini adalah halaman profil Anda",
+                fontSize = 16.sp,
+                color = Color.White.copy(alpha = 0.8f),
+                modifier = Modifier.padding(top = 4.dp, bottom = 32.dp)
+            )
 
             }
         }
