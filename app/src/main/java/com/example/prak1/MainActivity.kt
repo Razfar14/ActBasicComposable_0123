@@ -15,8 +15,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             Prak1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    // Memanggil composable layout utama dengan padding dari Scaffold
-                    TataletakBoxColumnRow(
+                    // Memanggil composable LoginScreen dari TugasProfil.kt dengan padding dari Scaffold
+                    LoginScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
