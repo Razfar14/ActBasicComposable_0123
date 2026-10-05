@@ -106,7 +106,73 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     containerColor = Color.White.copy(alpha = 0.95f)
                 )
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(32.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    // Gambar Bulat Profil di dalam Card
+                    Box(
+                        modifier = Modifier
+                            .size(160.dp)
+                            .shadow(8.dp, CircleShape)
+                            .clip(CircleShape)
+                            .border(4.dp, Color(0xFF1E88E5), CircleShape) // Border Biru Material
+                            .background(Color(0xFFE8EAF6)),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.son), // Ganti dengan foto Anda
+                            contentDescription = "Foto Profil",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.fillMaxSize()
+                        )
+                    }
 
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    // Label "Nama"
+                    Text(
+                        text = "NAMA MAHASISWA",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Gray,
+                        letterSpacing = 2.sp
+                    )
+
+                    Spacer(modifier = Modifier.height(4.dp))
+
+                    // Nama Lengkap
+                    Text(
+                        text = "MR.SON",
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color(0xFF1E88E5), // Warna Biru Elegan
+                        textAlign = TextAlign.Center
+                    )
+
+                    Spacer(modifier = Modifier.height(20.dp))
+
+                    // Label "NIM"
+                    Text(
+                        text = "NOMOR INDUK MAHASISWA",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Gray,
+                        letterSpacing = 2.sp
+                    )
+
+                    Spacer(modifier = Modifier.height(4.dp))
+
+                    // Nomor Induk Mahasiswa (NIM)
+                    Text(
+                        text = "20000140676",
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.ExtraBold,
+                        color = Color.DarkGray
+                    )
+                }
             }
         }
     }
